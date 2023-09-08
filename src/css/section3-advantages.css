@@ -1,11 +1,14 @@
 /* style dla section3-advantages */
-.visually-hidden {
+
+/* klasa visually-hidden jest już w styles.css */
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
+
 ul {
   list-style: none;
   }
@@ -22,20 +25,20 @@ ul {
 
 .advantages-section {
   background-color: #84a178;
-padding-bottom: 81px;
+  padding-bottom: 81px;
 }
 .advantages-style{
-display: inline-flex;
-flex-direction: column;
-align-items: center;
-gap: 16px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 .svg-advantages {
   width: 50px;
   height: 50px;
   border-radius: 25px;
   background: #f8d24e;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 32px;
