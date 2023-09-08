@@ -1,3 +1,19 @@
+:root {
+    --main-bg-color: #84a178;
+    --light-bg-font-color: #fcfcfc;
+    --dark-font-color: #131313;
+    --default-btn-color: #f8d24e;
+    --hover-btn-color: #0a8817;
+    --disabled-btn-color: #ababab;
+    --ice-cream-bg-color: #aec6a5;
+    --ice-coffee-bg-color: #efd478;
+    --milkshakes-bg-color: #d6936d;
+    --footer-font-color: #7a7a7a;
+    --modal-input-bg-color: rgba(248, 210, 78, 0.10);
+    --white-color: #fff;
+    --black-color: #000;
+}
+
 @import url("./header.css");
 @import url("./footer.css");
 
