@@ -9,19 +9,14 @@
   overflow: hidden;
 } */
 
-ul {
+/* ul {
   list-style: none;
   }
   * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.container {
-  width: 428px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+} */
 
 .advantages-section {
   background-color: #84a178;
