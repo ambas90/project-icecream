@@ -1,3 +1,14 @@
+@import url("./hero-header.css");
+@import url("./section1-products.css");
+@import url("./section2-about.css");
+@import url("./section3-advantages.css");
+@import url("./section4-gallery.css");
+@import url("./section5-customer-reviews.css");
+@import url("./section6-contacts.css");
+@import url("./footer.css");
+
+
+/* Style ogólne, np. dla body, wszystkich sekcji itp */
 :root {
     --main-bg-color: #84a178;
     --light-bg-font-color: #fcfcfc;
@@ -13,9 +24,3 @@
     --white-color: #fff;
     --black-color: #000;
 }
-
-@import url("./header.css");
-@import url("./footer.css");
-
-
-/* W tym pliku proponuję pisać style ogólne, np dla body, wszystkich sekcji, kontenerów itd. również variables-css */
