@@ -60,10 +60,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 80px;
 }
 .advantages-style{
   gap: 0;
+    flex-basis: calc((100% - 160px) / 3);
 }
 .advantages-numbers{
 font-size: 48px;
@@ -84,18 +84,21 @@ height: 88px;
   .container {
     max-width: 1200px;
   }
-    .advantages-section{
+  .advantages-section{
     padding-bottom: 178px;
   }
   .advantages-list{
-    gap: 32px;
+    gap: 0;
+  }
+  .advantages-style{
+  flex-basis: calc((100% - 64px) / 3);
   }
   .advantages-numbers{
     font-size: 58px;
     letter-spacing: 2.32px;
   }
   .advantages-text{
-    width: 368px;
+    width: 85%;
     height: 52px;
     font-size: 16px;
     line-height: 176%; 
