@@ -1,31 +1,20 @@
 /* style dla section3-advantages */
 
-/* klasa visually-hidden jest już w styles.css */
-/* .visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
-
-/* ul {
-  list-style: none;
-  }
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 .advantages-section {
   background-color: #84a178;
   padding-bottom: 81px;
+  padding-top: 60px;
 }
-.advantages-style{
-  display: inline-flex;
+.advantages-list{
+  display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 32px;
+}
+.advantages-style{
+    display: flex;
+  align-items: center;
+    flex-direction: column;
   gap: 16px;
 }
 .svg-advantages {
@@ -36,7 +25,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
 }
 .advantages-numbers {
   color: #fcfcfc;
@@ -57,4 +45,61 @@
   line-height: 170%;
   width: 230px;
   height: 40px;
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .advantages-section{
+    padding-bottom: 204px;
+  }
+.advantages-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.advantages-style{
+  gap: 0;
+}
+.advantages-numbers{
+font-size: 48px;
+letter-spacing: 1.92px;
+padding-top: 32px;
+padding-bottom: 12px;
+}
+.advantages-text{
+font-size: 14px;
+line-height: 174%; 
+width: 152px;
+height: 88px;
+}
+}
+
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+    .advantages-section{
+    padding-bottom: 178px;
+  }
+  .advantages-list{
+    gap: 32px;
+  }
+  .advantages-numbers{
+    font-size: 58px;
+    letter-spacing: 2.32px;
+  }
+  .advantages-text{
+    width: 368px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 176%; 
+letter-spacing: 0.32px;
+  }
+
 }
