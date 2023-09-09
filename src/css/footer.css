@@ -1,1 +1,100 @@
 /* style dla footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.footer {
+  background-color: var(--main-bg-color);
+}
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 60px;
+}
+.footer-subtitle {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.36px;
+  width: 200px;
+  height: 76px;
+}
+.title-style {
+  color: var(--white-color);
+  width: 232px;
+  text-transform: uppercase;
+  margin-top: 60px;
+  padding-bottom: 16px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer-icons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 34px;
+  height: 34px;
+  fill: var(--ice-coffee-bg-color);
+  border-radius: 100%;
+}
+.social-icon:hover {
+  fill: var(--light-bg-font-color);
+}
+
+.footer-text {
+  color: var(--dark-font-color);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 186%;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.footer-link {
+  color: var(--white-color);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 186%;
+}
+
+.horizontal-line {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e1e1e1;
+  margin-bottom: 20px;
+}
+
+.rights-text-ft {
+  color: var(--footer-font-color);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 152%;
+  margin-bottom: 24px;
+  height: 42px;
+}
