@@ -1,7 +1,6 @@
 <section class="contacts">
-  <div class="container contacts-list-flex">
-    <h2 class="contacts-title visually-hidden">Contacts</h2>
-    <!--do ukrycia-->
+    <div class="container contacts-list-flex">
+        <h2 class="contacts-title visually-hidden">Contacts</h2> <!--do ukrycia-->
 
     <ul class="contacts-list">
       <li>
@@ -52,18 +51,20 @@
           <p class="contact-text">Saturday-Sunday</p>
           <p class="contact-text open-time">08:00 AM - 16:00 PM</p>
         </div>
-        <address class="contact-address">
-          <a class="contact-link" href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a> <br />
-          <a class="contact-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
-        </address>
-      </li>
-    </ul>
-
+          <address class="contact-address">
+            <a class="contact-link" href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a> <br />
+            <a class="contact-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </address>
+        </li>
+      </ul>
+  </div>
+      
     <div class="contacts-buttons">
       <button type="button" class="location-button contacts-button-style">Our Locations
             <svg class="location-button-arrow">
               <use href="./images/svg/symbol-defs.svg#icon-arrow-right-bold" />
-            </svg></button>
+            </svg>
+      </button>
       <button type="button" class="franchise-button contacts-button-style" data-modal-open>
         Franchise
             <svg class="franchise-button-arrow">
@@ -72,55 +73,44 @@
       </button>
     </div>
       
-      <!-- Francise modal -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="francise-modal">
-          <button class="close-modal-button" data-modal-close>
-            <svg class="icon-close-modal">
-              <use href="./images/svg/symbol-defs.svg#icon-close" />
-            </svg>
-          </button>
+        <!-- Francise modal -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="francise-modal">
+                <button class="close-modal-button" data-modal-close>
+                    <svg class="icon-close-modal">
+                        <use href="./images/svg/symbol-defs.svg#icon-close" />
+                    </svg>
+                </button>
 
-          <form name="francise-form" class="francise-form">
-            <h4>Thank you for your interest in owning an Ice Cream shop</h4>
-            <p>
-              Due to the overwhelming volume of franchise requests we are not accepting new
-              franchisee applications at this time. Once the application process resumes, we will
-              contact you for further information. Please fill out the contact information below and
-              we will reach out for additional information. We appreciate your patience.
-            </p>
-            <div class="inputs-container" role="form-inputs">
-              <label>
-                <input
-                  type="text"
-                  name="user-name"
-                  class="basic-input"
-                  placeholder="Name"
-                  required
-                />
-              </label>
-              <label>
-                <input type="tel" name="user-phone" class="basic-input" placeholder="Phone" />
-              </label>
-              <label>
-                <input
-                  type="email"
-                  name="comment-user-email"
-                  class="basic-input"
-                  placeholder="Email"
-                  required
-                />
-              </label>
-              <label>
-                <textarea name="user-comment" placeholder="Comment"></textarea>
-              </label>
+                <form name="francise-form" class="francise-form">
+                    <h4>Thank you for your interest in owning an Ice Cream shop</h4>
+                    <p>
+                        Due to the overwhelming volume of franchise requests we are not accepting new
+                        franchisee applications at this time. Once the application process resumes, we will
+                        contact you for further information. Please fill out the contact information below and
+                        we will reach out for additional information. We appreciate your patience.
+                    </p>
+                    <div class="inputs-container" role="form-inputs">
+                        <label>
+                            <input type="text" name="user-name" class="basic-input" placeholder="Name" required />
+                        </label>
+                        <label>
+                            <input type="tel" name="user-phone" class="basic-input" placeholder="Phone" />
+                        </label>
+                        <label>
+                            <input type="email" name="comment-user-email" class="basic-input" placeholder="Email"
+                                required />
+                        </label>
+                        <label>
+                            <textarea name="user-comment" placeholder="Comment"></textarea>
+                        </label>
+                    </div>
+                    <button class="send-form-button" type="submit">Submit</button>
+                </form>
             </div>
-            <button class="send-form-button" type="submit">Submit</button>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
+    </div>
 </section>
 
 <!-- Contacts
