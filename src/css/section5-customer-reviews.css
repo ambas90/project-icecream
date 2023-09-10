@@ -1,23 +1,27 @@
 /* style dla section5-customer-reviews */
 .customer-reviews-section {
     margin-top: -859px;
+    margin-bottom: 300px;
 }
 
 @media screen and (min-width: 480px) {
     .customer-reviews-section {
         margin-top: -785px;
+        margin-bottom: 226px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .customer-reviews-section {
         margin-top: -734px;
+        margin-bottom: 300px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .customer-reviews-section {
         margin-top: -589px;
+        margin-bottom: 155px;
     }
 }
 
@@ -92,6 +96,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 186%;
+    margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -99,3 +104,8 @@
         font-size: 16px;
     }
 }
+
+span.swiper-pagination-bullet-active {
+    background-color: var(--main-bg-color);
+}
+
