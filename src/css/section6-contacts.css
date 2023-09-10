@@ -3,7 +3,8 @@
 /* mobile version */
 .contacts {
   background-color: var(--main-bg-color);
-  visibility: visible;
+  height: 1103px;
+  position: relative;
 }
 
 .contacts-list-flex {
@@ -15,6 +16,8 @@
 }
 
 .contacts-list {
+  position: absolute;
+  top: -349;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -82,6 +85,7 @@
 
 /* buttons style */
 .contacts-buttons {
+  padding-top: 943px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,6 +146,9 @@
   .container {
     max-width: 768px;
   }
+  .contacts {
+    height: 360px;
+  }
 
   .contacts-list-flex {
     display: flex;
@@ -151,6 +158,8 @@
     gap: 40px;
   }
   .contacts-list {
+    position: absolute;
+    top: -299;
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -172,6 +181,9 @@
     font-size: 14px;
     line-height: 1.86;
   }
+  .contact-address {
+    padding-top: 32px;
+  }
   .street {
     line-height: 1.83em;
   }
@@ -183,6 +195,7 @@
     color: #907e82;
   }
   .contacts-buttons {
+    padding-top: 278px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -198,10 +211,14 @@
   .container {
     max-width: 1200px;
   }
+  .contacts {
+    height: 636px;
+  }
   .contacts-list-flex {
     gap: 60px;
   }
   .contacts-list {
+    top: -128px;
     gap: 32px;
   }
   .contacts-list > li {
@@ -236,6 +253,12 @@
   .open-time {
     color: var(--disabled-btn-color);
   }
+  .street:hover,
+  .street:focus {
+    text-decoration: underline;
+  }
+  .contacts-buttons {
+  padding-top: 474px;
 }
 
 /* Francise modal */
@@ -290,13 +313,13 @@
   gap: 20px;
 }
 
-.francise-form>h4 {
+.francise-form > h4 {
   text-align: center;
   font-family: Seymour One;
   line-height: 24px;
 }
 
-.francise-form>p {
+.francise-form > p {
   font-size: 14px;
   line-height: 140%;
 }
@@ -307,7 +330,7 @@
   gap: 12px;
 }
 
-.francise-form>label {
+.francise-form > label {
   font-size: 12px;
   margin-bottom: 10px;
 }
@@ -318,7 +341,7 @@
   padding: 11px 12px;
   border-radius: 10px;
   border: 1px solid var(--main-bg-color);
-  background: rgba(248, 210, 78, 0.10);
+  background: rgba(248, 210, 78, 0.1);
 }
 
 .basic-input:focus {
@@ -330,7 +353,7 @@
   min-height: 120px;
   border-radius: 10px;
   border: 1px solid var(--main-bg-color);
-  background: rgba(248, 210, 78, 0.10);
+  background: rgba(248, 210, 78, 0.1);
   outline: none;
   resize: none;
   padding: 11px 12px;
