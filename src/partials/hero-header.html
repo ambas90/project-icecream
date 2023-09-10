@@ -1,6 +1,4 @@
-<!-- <head>
-  <link rel="stylesheet" href="../css/hero-header.css" />
-</head> -->
+
 <header class="h-container">
   <!-- Box for icon.svg -->
   <div class="ice-icon">
@@ -32,9 +30,32 @@
           <path
             d="M3.97 1.227a.75.75 0 0 0 0 1.06L7.682 6 3.97 9.712a.75.75 0 0 0 1.06 1.06L9.273 6.53a.75.75 0 0 0 0-1.06L5.03 1.227a.75.75 0 0 0-1.06 0Z" />
         </svg>
-      </p>
-    </button>
-  </div>
+    </div>
+    <!-- Section for navigation with ancors -->
+    <section class="head-navigation">
+        <ul class="nav-list">
+            <li><a class="nav-list_element" href="#">Home</a></li>
+            <li><a class="nav-list_element" href="#">How it's made?</a></li>
+            <li><a class="nav-list_element" href="#">Our products</a></li>
+            <li><a class="nav-list_element" href="#">Contacts</a></li>
+        </ul>
+    </section>
+    <!-- Box for "Buy" button and mobile menu icon -->
+    <div class="header_buttons">
+        <button class="menu-toggle js-open-menu mobile" aria-expanded="false" aria-controls="mobile-menu">
+            <svg>
+                <use href="./images/svg/symbol-defs.svg#"></use>
+            </svg>
+        </button>
+        <button class="purchase_button desktop" type="submit">
+            <p>
+                Buy now
+                <svg>
+                    <use href="./images/svg/symbol-defs.svg#"></use>
+                </svg>
+            </p>
+        </button>
+    </div>
 </header>
 
 <!-- hero section -->
@@ -107,6 +128,8 @@
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous">
   </script>
+
+
 
 <!-- Hero Header
 W headerze znajduje się logo, menu nawigacyjne oraz przycisk.
