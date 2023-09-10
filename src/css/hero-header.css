@@ -1,12 +1,18 @@
 /* style for header section */
+* {
+  margin: 0px;
+}
 .h-container {
   width: 100%;
-  max-width: 480px;
+  min-width: 450px;
   height: auto;
   display: flex;
   background: #84a178;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.ice-icon {
+  padding: 12px 20px;
 }
 .ice-icon svg {
   width: 40px;
@@ -69,6 +75,8 @@
   gap: 4px;
 }
 .purchase_button svg {
+  width: 12px;
+  height: 12px;
   fill: #000;
 }
 .purchase_button:focus,
@@ -81,7 +89,10 @@
   background: #0a8817;
   border: none;
 }
-
+.mobile-fix {
+  padding-bottom: 88px;
+  padding-top: 114px;
+}
 .menu-container {
   position: fixed;
   width: 100%;
@@ -105,7 +116,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 /*Styles for hero section*/
 .hero-container {
