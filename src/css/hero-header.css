@@ -1,12 +1,18 @@
 /* style for header section */
+* {
+  margin: 0px;
+}
 .h-container {
   width: 100%;
-  max-width: 480px;
+  min-width: 450px;
   height: auto;
   display: flex;
   background: #84a178;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.ice-icon {
+  padding: 12px 20px;
 }
 .ice-icon svg {
   width: 40px;
@@ -69,6 +75,8 @@
   gap: 4px;
 }
 .purchase_button svg {
+  width: 12px;
+  height: 12px;
   fill: #000;
 }
 .purchase_button:focus,
@@ -81,7 +89,10 @@
   background: #0a8817;
   border: none;
 }
-
+.mobile-fix {
+  padding-bottom: 88px;
+  padding-top: 114px;
+}
 .menu-container {
   position: fixed;
   width: 100%;
@@ -105,12 +116,16 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 /*Styles for hero section*/
 .hero-container {
   width: 100%;
-  max-width: 480px;
+  min-width: 450px;
+  background: #84a178;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 h1 {
   font-family: Seymour One;
@@ -141,9 +156,55 @@ h1 {
   text-align: left;
   text-transform: uppercase;
 }
-.hero-right-side_presentation_frame {
-  width: 152px;
-  height: 152px;
+.hero-left-side_navigation_button {
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  background-color: inherit;
+  width: 108px;
+  height: 38px;
+}
+.hero-left-side_navigation_button:hover {
+  border: 2px solid #0a8817;
+}
+.hero-left-side_navigation_button:focus,
+.hero-left-side_navigation_button p:focus {
+  border: 2px solid #0a8817;
+  color: #fff;
+}
+.hero-left-side_navigation_button:disabled {
+  border: 2px solid #ababab;
+}
+.hero-left-side_navigation_button p {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.hero-left-side_navigation_nav {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f8d24e;
+  width: 114px;
+  height: 24px;
+}
+.hero-left-side_navigation_nav:hover {
+  color: #0a8817;
+}
+.hero-left-side_navigation_nav:focus {
+  color: #fff;
+}
+.hero-left-side_navigation_nav:disabled {
+  color: #ababab;
+}
+.hero-left-side_presentation_frame img {
+  min-width: 177px;
+  max-width: 218px;
 }
 /* Responsives elements */
 @media screen and (min-width: 1200px) {
