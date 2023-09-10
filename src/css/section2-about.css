@@ -5,7 +5,13 @@
 
 .about-container {
   position: relative;
-  padding-top: 60px;
+  min-height: 570px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-container {
+    min-height: 765px;
+  }
 }
 
 .about-label {
@@ -14,6 +20,7 @@
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -171,14 +178,7 @@
 @media screen and (min-width: 768px) {
   .read-button {
     margin-top: 54px;
-    margin-bottom: 80px;
     margin-left: 50%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .read-button {
-    margin-bottom: 146px;
   }
 }
 
@@ -186,4 +186,51 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.about-modal {
+  text-align: center;
+  width: 280px;
+  position: relative;
+  margin: auto;
+  background-color: var(--light-bg-font-color);
+  border-radius: 10px;
+  border: 2px solid var(--default-btn-color);
+  padding: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-modal {
+    width: 568px;
+  }
+}
+.about-modal-title {
+  color: var(--dark-font-color);
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-modal-text {
+  color: var(--dark-font-color);
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.about-video {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 224px;
+  height: 199px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-video {
+    width: 448px;
+    height: 205px;
+  }
 }
