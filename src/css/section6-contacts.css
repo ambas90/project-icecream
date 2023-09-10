@@ -155,7 +155,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 0;
   }
   .contacts-list {
     position: absolute;
@@ -183,9 +183,13 @@
   }
   .contact-address {
     padding-top: 32px;
+    padding-bottom: 32px;
   }
   .street {
     line-height: 1.83em;
+  }
+    .contacts-list-div {
+    padding: 32px 0px 24px 0px;
   }
   .contact-link {
     font-size: 14px;
