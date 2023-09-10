@@ -1,1 +1,141 @@
 /* style dla section4-gallery */
+.gallery-section {
+    background-color: var(--main-bg-color);
+    background-image: url('../images/background-gal-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 32px;
+    max-width: 320px;
+    height: 1069px;
+    margin-inline: auto;
+}
+
+
+@media screen and (min-width: 480px) {
+    .gallery-section {
+        background-image: url('../images/background-gal-480.jpg');
+        background-position-y: 14px;
+        max-width: 480px;
+        height: 1069px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-section {
+        background-image: url('../images/background-gal-tablet.jpg');
+        background-position-y: 144px;
+        max-width: 768px;
+        height: 1161px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery-section {        
+        background-image: url('../images/background-gal-desktop.jpg');
+        background-position-y: 98px;
+        max-width: 1200px;
+        height: 1151px;
+        margin-inline: auto;
+    }
+}
+
+
+/* slide show gallery */
+
+
+
+#slideset-gallery {
+    width: 280px;
+    height: 130px;
+    position: relative;
+    margin-inline: auto;
+}
+
+.gallery-img {
+    border-radius: 8px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 480px) {
+    #slideset-gallery {
+        width: 440px;
+        height: 204px;
+        position: relative;
+        margin-inline: auto;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    #slideset-gallery {
+        width: 704px;
+        height: 327px;
+        position: relative;
+        margin-inline: auto;
+    }
+
+    .gallery-img {
+        border-radius: 18px;
+            
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #slideset-gallery {
+        width: 1013px;
+        height: 422px;
+        position: relative;
+        margin-inline: auto;
+    }
+
+    .gallery-img {
+        border-radius: 24px;
+    }
+}
+
+
+#slideset-gallery>div {
+    animation: 24s autoplay-gallery infinite linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+@keyframes autoplay-gallery {
+    0% {
+        opacity: 0;
+    }
+
+    4% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    37.33% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#slideset-gallery>*:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#slideset-gallery>*:nth-child(2) {
+    animation-delay: 8s;
+}
+
+#slideset-gallery>*:nth-child(3) {
+    animation-delay: 16s;
+}
