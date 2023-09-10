@@ -1,21 +1,50 @@
 <section class="about-section">
-    <div class="container">
-        <p class="about-label">tradition and love</p>
-        <h2 class="about-title">how it's made?</h2>
-        <img src="#" alt="cow" />
-        <p class="about-text">Ice is a place where you will become not only a little happier, but also
-            healthier. Health is the main value for us, and we follow it when creating our handmade desserts.
-        </p>
-        <p class="about-text">We use traditional recipes and 100% natural ingredients. Our products are so
-            natural that they can be given to children from the age of three years. Sweets lovers can expect 55
-            types of ice cream, 15 types of coffee and 23 milkshakes.</p>
-        <button type="button" class="read-button">Read more</button>
+  <div class="container about-container">
+    <p class="about-label">tradition and love</p>
+    <h2 class="about-title">how it's made?</h2>
+    <div class="about-image"></div>
+    <div class="about-text-container">
+      <p class="about-text">
+        Ice is a place where you will become not only a little happier, but also healthier. Health
+        is the main value for us, and we follow it when creating our handmade desserts.
+      </p>
+      <p class="about-text">
+        We use traditional recipes and 100% natural ingredients. Our products are so natural that
+        they can be given to children from the age of three years. Sweets lovers can expect 55 types
+        of ice cream, 15 types of coffee and 23 milkshakes.
+      </p>
+      <p class="about-text">This is enough to choose ice cream and coffee for any mood!</p>
     </div>
+    <button type="button" class="read-button" about-modal-open>
+      Read more
+      <div class="read-more-icon">
+        <svg width="12px" height="12px">
+          <use href="./images/svg/symbol-defs.svg#icon-arrow-right-bold">
+        </svg>
+      </div>
+    </button>
+  </div>
+
+<!-- about modal -->
+
+     <div class="backdrop is-hidden" about-modal>
+            <div class="about-modal">
+                <button class="close-modal-button" about-modal-close>
+                    <svg class="icon-close-modal">
+                        <use href="./images/svg/symbol-defs.svg#icon-close" />
+                    </svg>
+                </button>
+<h3 class="aobut-modal-title">How it's made?</h3>
+        
+            <iframe class="about-video" width="560" height="315" src="https://www.youtube.com/embed/oB6GwE2oIM4?si=bswnPV9QaLk4lgj1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <p class="about-modal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+
+              </div>
+        </div>
+    
+  
+
 </section>
-
-
-
-
 
 <!-- About (how it’s made?)
 “tradition and love” – jest etykietą tytułu i nie wyróżnia się znacznikiem nagłówka.
