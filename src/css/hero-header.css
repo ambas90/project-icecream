@@ -202,9 +202,9 @@ h1 {
 .hero-left-side_navigation_nav:disabled {
   color: #ababab;
 }
-.hero-left-side_presentation_frame {
-  width: 152px;
-  height: 152px;
+.hero-left-side_presentation_frame img {
+  min-width: 177px;
+  max-width: 218px;
 }
 /* Responsives elements */
 @media screen and (min-width: 1200px) {
