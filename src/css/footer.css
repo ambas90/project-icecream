@@ -43,12 +43,14 @@
 }
 
 .social-icon {
-  width: 34px;
-  height: 34px;
-  fill: var(--ice-coffee-bg-color);
-  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  /*fill: var(--main-bg-color);*/
+  border-radius: 50% solid var(--ice-coffee-bg-color);
 }
-.social-icon:hover .social-icon:focus {
+
+.social-icon:hover,
+.social-icon:focus {
   fill: var(--light-bg-font-color);
 }
 
