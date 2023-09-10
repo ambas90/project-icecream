@@ -5,14 +5,12 @@
 .h-container {
   width: 100%;
   min-width: 450px;
+  padding: 12px 20px;
   height: auto;
   display: flex;
   background: #84a178;
   align-items: center;
   justify-content: space-between;
-}
-.ice-icon {
-  padding: 12px 20px;
 }
 .ice-icon svg {
   width: 40px;
@@ -79,9 +77,10 @@
   height: 12px;
   fill: #000;
 }
-.purchase_button:focus,
-.purchase_button svg:focus {
+.purchase_button:focus {
   color: #fff;
+}
+.purchase_button svg:focus {
   fill: #fff;
 }
 .purchase_button:hover,
@@ -115,8 +114,9 @@
 .mobile-box {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
+  padding: 12px 20px;
 }
 /*Styles for hero section*/
 .hero-container {
@@ -137,9 +137,9 @@ h1 {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
 }
 .h1_text_1 {
-  font-family: Seymour One;
   font-size: 26px;
   font-weight: 400;
   line-height: 33px;
@@ -148,13 +148,24 @@ h1 {
   text-align: left;
 }
 .h1_text_2 {
-  font-family: Titan One;
   font-size: 37px;
   font-weight: 400;
   line-height: 42px;
   letter-spacing: 0.04em;
   text-align: left;
   text-transform: uppercase;
+}
+.hero-left-side {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.hero-left-side_navigation {
+  display: flex;
+  gap: 12px;
+  padding-top: 32px;
+  padding-bottom: 19px;
+  align-items: center;
 }
 .hero-left-side_navigation_button {
   border: 2px solid #f8d24e;
@@ -205,6 +216,7 @@ h1 {
 .hero-left-side_presentation_frame img {
   min-width: 177px;
   max-width: 218px;
+  background-color: #0a8817;
 }
 /* Responsives elements */
 @media screen and (min-width: 1200px) {
