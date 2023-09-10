@@ -57,15 +57,16 @@
     border-radius: 8px;
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 130px;
 }
 
 @media screen and (min-width: 480px) {
     #slideset-gallery {
         width: 440px;
         height: 204px;
-        position: relative;
-        margin-inline: auto;
+    }
+    .gallery-img {
+        height: 204px;
     }
 
 }
@@ -74,13 +75,11 @@
     #slideset-gallery {
         width: 704px;
         height: 327px;
-        position: relative;
-        margin-inline: auto;
     }
 
     .gallery-img {
         border-radius: 18px;
-            
+        height: 327px;    
     }
 }
 
@@ -94,6 +93,7 @@
 
     .gallery-img {
         border-radius: 24px;
+        height: 422px;
     }
 }
 
@@ -104,6 +104,7 @@
     top: 0;
     left: 0;
     opacity: 0;
+    width: 100%;
 }
 
 @keyframes autoplay-gallery {
