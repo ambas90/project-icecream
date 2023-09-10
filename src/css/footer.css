@@ -8,23 +8,9 @@
 .footer-title {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   margin-bottom: 60px;
 }
-.footer-subtitle {
-  color: var(--white-color);
-  text-transform: uppercase;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.36px;
-  width: 200px;
-  height: 76px;
-}
+
 .title-style {
   color: var(--white-color);
   width: 232px;
@@ -36,6 +22,17 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.subtitle-style {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.36px;
+  width: 200px;
+  height: 76px;
 }
 
 .footer-icons {
@@ -51,7 +48,7 @@
   fill: var(--ice-coffee-bg-color);
   border-radius: 100%;
 }
-.social-icon:hover {
+.social-icon:hover .social-icon:focus {
   fill: var(--light-bg-font-color);
 }
 
@@ -81,20 +78,96 @@
 }
 
 .horizontal-line {
-  width: 100%;
+  width: 120%;
   border: none;
   border-top: 1px solid #e1e1e1;
   margin-bottom: 20px;
 }
 
 .rights-text-ft {
-  color: var(--footer-font-color);
   text-align: center;
+  display: block;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 24px;
+}
+
+.rights-item-ft {
+  color: var(--footer-font-color);
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 152%;
-  margin-bottom: 24px;
-  height: 42px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1999px) {
+  .footer-title {
+    width: 352px;
+    margin-bottom: 0;
+  }
+  .title-style {
+    font-size: 26px;
+    width: 352px;
+  }
+  .subtitle-style {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    height: 118px;
+  }
+  .footer-icons {
+    margin-left: 189px;
+    margin-top: 150px;
+  }
+  .rights-text-ft {
+    margin-bottom: 12px;
+  }
+
+  .tablet-style {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .rights-text-ft {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title-style {
+    font-size: 30px;
+    width: 504px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+  }
+  .subtitle-style {
+    width: 497px;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .footer-icons {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 602px;
+  }
+  .footer-link {
+    font-size: 16px;
+  }
+  .footer-text {
+    font-size: 16px;
+  }
 }
