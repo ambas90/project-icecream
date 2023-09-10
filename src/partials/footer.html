@@ -41,7 +41,71 @@
     <p class="rights-item-ft">© 2022 - IceCream.</p>
     <p class="rights-item-ft">All Rights Reserved.</p>
   </div>
+    
+    
+    
+    
+     <!-- BUY  NOW  MODAL -->
+    <div class="buy-now-modal is-hidden" buy-now-modal>
+        <div class="buy-now-modal_body">
+            <button class="buy-now-modal-close" buy-now-modal-close>
+                <svg width="20px" height="20px">
+                    <use href="/src/images/svg/symbol-defs (11) (po optymalizacji).svg#icon-close"></use>
+                </svg>
+            </button>
+            <h3>Buy now</h3>
+          
+            <form>
+                <ul class="buy-now-modal-list">
+                    <div class="wrapper">
+                        <li class="buy-now-modal-card1">
+                            <label class="firstlabel">
+                                <input type="checkbox" class="buy-now-checkbox1" />
+                                <div class="buy-now-li-body1"></div>
+                                <div class="buy-now-modal-circle1"></div>
+                                <p class="buy-now-paragraph">ICE CREAM</p>
+                            </label>
+                    </div>
+                    </li>
+                    <div class="wrapper">
+                        <li class="buy-now-modal-card2">
+                            <label class="secondlabel">
+                                <input type="checkbox" class="buy-now-checkbox2" />
+                                <div class="buy-now-li-body2"></div>
+                                <div class="buy-now-modal-circle2"></div>
+                                <p class="buy-now-paragraph">ICE COFFEE</p>
+                            </label>
+                    </div>
+                    </li>
+                    <div class="wrapper">
+                        <li class="buy-now-modal-card3">
+                            <label class="thirdlabel">
+                                <input type="checkbox" class="buy-now-checkbox3" />
+                                <div class="buy-now-li-body3"></div>
+                                <div class="buy-now-modal-circle3"></div>
+                                <p class="buy-now-paragraph">MILKSHAKE</p>
+                            </label>
+                    </div>
+                    </li>
+                </ul>
+                <div class="buy-now-inputs-wrapper">
+                    <label for="username"></label>
+                    <input type="text" name="username" id="username" placeholder="Name" class="buy-now-properties" required
+                        pattern="^[a-zA-Z]+\s[a-zA-Z]+$" required />
+                    <label for="userphone"></label>
+                    <input type="tel" name="userphone" id="userphone" placeholder="Phone" class="buy-now-properties"
+                        required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required />
+                    <label for="usercomment"> </label>
+                    <textarea name="usercomment" id="usercomment" class="buy-now-textarea" placeholder="Comment"></textarea>
+                </div>
+                <div class="buy-now-button-wrapper">
+                    <button type="submit" class="buy-now-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </footer>
+
 
 <!-- Footer
 W footerze umieszczony jest zduplikowany tytuł, nie ma potrzeby wyróżniać go przez tag nagłówka.
