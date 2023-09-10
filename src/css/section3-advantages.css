@@ -2,7 +2,7 @@
 
 .advantages-section {
   background-color: #84a178;
-  padding-bottom: 81px;
+  padding-bottom: 32px;
   padding-top: 60px;
 }
 .advantages-list{
@@ -53,7 +53,7 @@
     max-width: 768px;
   }
   .advantages-section{
-    padding-bottom: 204px;
+    padding-bottom: 60px;
   }
 .advantages-list{
   display: flex;
@@ -85,7 +85,7 @@ height: 88px;
     max-width: 1200px;
   }
   .advantages-section{
-    padding-bottom: 178px;
+    padding-bottom: 80px;
   }
   .advantages-list{
     gap: 0;
