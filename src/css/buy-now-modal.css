@@ -294,7 +294,7 @@ screen and (min-width: 768px) and (min-resolution: 2x) {
 .buy-now-paragraph {
     position: absolute;
     top: 96px;
-    left: 16px;
+    left: 13px;
     font-family: Montserrat;
     font-weight: 700;
     font-size: 16;
@@ -310,8 +310,8 @@ screen and (min-width: 768px) and (min-resolution: 2x) {
     background: #F8D24E1A;
     border-radius: 10px;
     margin-inline: 28px;
-    padding-left: 10.5px;
-    color: #131313;
+    padding-left: 12px;
+    color: var(--dark-font-color);
     font-size: 14;
     font-family: Montserrat;
     line-height:1.4;
@@ -325,8 +325,8 @@ screen and (min-width: 768px) and (min-resolution: 2x) {
     background: #F8D24E1A;
     border-radius: 10px;
     margin-inline: 28px;
-    padding-left: 10.5px;
-    color: #131313;
+    padding-left: 12px;
+    color: var(--dark-font-color);
     font-size: 14;
     font-family: Montserrat;
     line-height: 1.4;
@@ -338,15 +338,16 @@ screen and (min-width: 768px) and (min-resolution: 2x) {
         width: 368px;
         height: 42px;
         margin-inline: 100px;
+        padding-left: 16px;
     }
 }
 
 @media screen and (min-width:768px) {
     .buy-now-textarea {
-        width: 368px;
-        height: 42px;
+        width: 368px;        
         margin-inline: 100px;
         height: 84px;
+        padding-left: 16px;
     }
 }
 
