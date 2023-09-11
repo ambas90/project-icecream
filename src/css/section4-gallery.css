@@ -9,6 +9,8 @@
     background-position-x: center;
     background-position-y: 32px;
     height: 1069px;
+    width: 100%;
+    margin: 0;
 }
 
 
@@ -16,7 +18,7 @@
     .gallery {
         background-image: url('../images/background-gal-480.jpg');
         background-position-y: 14px;
-        height: 1069px;
+        /* height: 1069px; */
 
     }
 }
