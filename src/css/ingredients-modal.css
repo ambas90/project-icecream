@@ -30,11 +30,11 @@ ul {
     transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
 }
 
-.is-hidden .buy-now-modal-body {
+.is-hidden .ingredients-modal-body {
     scale: 0;
 }
 
-.modal:not(.is-hidden) .buy-now-modal-body {
+.modal:not(.is-hidden) .ingredients-modal-body {
     scale: 1;
 }
 
@@ -54,8 +54,8 @@ ul {
     position: relative;
     max-width: 280px;
     margin: auto;
-    background-color: #FCFCFC;
-    border: 2px solid #F8D24E;
+    background-color: var(--light-bg-font-color);
+    border: 2px solid var(--default-btn-color);
     border-radius: 10px;
     top: 60px;
 }
@@ -78,9 +78,8 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-    .ingredients-modal_body h3 {
+    .ingredients-modal_body h2 {
         margin-top: 32px;
-
     }
 }
 
