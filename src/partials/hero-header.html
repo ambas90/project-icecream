@@ -1,69 +1,70 @@
-  <header>
-    <div class="h-container">
-      <!-- Box for icon.svg -->
-      <div class="ice-icon">
-        <svg>
-          <use href="./images/svg/symbol-defs.svg#icon-head-logo"></use>
-        </svg>
-      </div>
-      <!-- Section for navigation with ancors -->
-      <section class="head-navigation desktop">
-        <ul class="nav-list">
-          <li><a class="nav-list_element" href="#">Home</a></li>
-          <li><a class="nav-list_element nav-list_element__decor" href="#">How it's made?</a></li>
-          <li><a class="nav-list_element" href="#">Our products</a></li>
-          <li><a class="nav-list_element" href="#">Contacts</a></li>
-        </ul>
-      </section>
-      <!-- Box for "Buy" button and mobile menu icon -->
-      <div class="header_buttons">
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg height="32" width="32">
-            <use href="./images/svg/symbol-defs (11) (po optymalizacji).svg#icon-menu-burger"></use>
-          </svg>
-        </button>
-        <button class="purchase_button desktop" type="submit">
-          <p>
-            Buy now
-            <svg>
-              <use
-                href="./images/svg/symbol-defs (11) (po optymalizacji).svg#icon-s-arrow"
-                widh="12"
-                height="12"
-              ></use>
-            </svg>
-          </p>
-        </button>
-      </div>
+<header>
+  <div class="header-container">
+    <!-- Box for icon.svg -->
+    <div class="ice-icon">
+      <svg width="48" height="44">
+        <use href="./images/svg/symbol-defs.svg#icon-head-logo"></use>
+      </svg>
     </div>
-  </header>
+
+    <!-- Section for navigation with ancors -->
+    <section class="head-navigation desktop">
+      <ul class="nav-list">
+        <li><a class="nav-list_element" href="#">Home</a></li>
+        <li><a class="nav-list_element nav-list_element__decor" href="#">How it's made?</a></li>
+        <li><a class="nav-list_element" href="#">Our products</a></li>
+        <li><a class="nav-list_element" href="#">Contacts</a></li>
+      </ul>
+    </section>
+
+    <!-- Box for "Buy" button and mobile menu icon -->
+    <div class="header_buttons">
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg height="32" width="32">
+          <use href="./images/svg/symbol-defs (11) (po optymalizacji).svg#icon-menu-burger"></use>
+        </svg>
+      </button>
+
+      <button class="purchase_button desktop" type="submit">
+        <p>
+          Buy now
+          <svg>
+            <use href="./images/svg/symbol-defs (11) (po optymalizacji).svg#icon-s-arrow" widh="12" height="12"></use>
+          </svg>
+        </p>
+      </button>
+    </div>
+  </div>
+
   <!-- hero section -->
   <section class="hero-container">
     <div class="hero-left-side">
       <h1>
-        ice cream <span class="h1_text_1">made with </span><span class="h1_text_2">passion</span>
+        <p>ice cream</p>
+        <p>made with</p>
+        <span>passion</span>
       </h1>
       <span class="hero-left-side_navigation">
-        <button class="hero-left-side_navigation_button" type="submit"><p>Products</p></button>
+        <button class="hero-left-side_navigation_button" type="submit">
+          <p>Products</p>
+        </button>
         <a class="hero-left-side_navigation_nav" href="#">How it's made?</a>
       </span>
       <span class="hero-left-side_presentation">
         <div class="hero-left-side_presentation_frame">
-          <img
-            alt="Beautifull, colorfull ice cream with smiles"
-            class="presentation_ice_cream_plate"
-            src="./images/ice_cream_mobile@1x.jpg"
-            srcset="
+          <img alt="Beautifull, colorfull ice cream with smiles" class="presentation_ice_cream_plate"
+            src="./images/ice_cream_mobile@1x.jpg" srcset="
               ./images/ice_cream_mobile@2x.jpg  354w,
               ./images/ice_cream_tablet@1x.jpg  268w,
               ./images/ice_cream_tablet@2x.jpg  536w,
               ./images/ice_cream_desktop@1x.jpg 456w,
               ./images/ice_cream_desktop@2x.jpg 912w
-            "
-            sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px"
-          />
+            " sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px" />
         </div>
       </span>
+      <svg class="icon-dots">
+        <use href="./images/svg/symbol-defs.svg#icon-kropki"></use>
+      </svg>
     </div>
     <div class="hero-right-side desktop">
       <span class="hero-right-side_cafes_foodtrucks">
@@ -76,44 +77,42 @@
       </span>
     </div>
   </section>
-  <!-- Mobile/Tablet Menu -->
-  <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <span class="mobile-box">
-      <div class="ice-icon">
-        <svg>
-          <use href="./images/svg/symbol-defs.svg#icon-head-logo"></use>
-        </svg>
-      </div>
-      <button class="menu-toggle js-close-menu">
-        <svg class="menu-toggle__icon" width="20" height="20">
-          <use href="./images/svg/symbol-defs (11) (po optymalizacji).svg#icon-close"></use>
-        </svg>
-      </button>
-    </span>
-    <ul class="nav-list">
-      <li><a class="nav-list_element" href="#">Home</a></li>
-      <li><a class="nav-list_element nav-list_element__decor" href="#">How it's made?</a></li>
-      <li><a class="nav-list_element" href="#">Our products</a></li>
-      <li><a class="nav-list_element" href="#">Contacts</a></li>
-    </ul>
-    <div class="mobile-fix">
-      <button class="purchase_button" type="submit">
-        <p>
-          Buy now
-          <svg>
-            <use href="./images/svg/symbol-defs.svg#icon-s-arrow" widh="12" height="12"></use>
-          </svg>
-        </p>
-      </button>
+</header>
+
+
+
+<!-- Mobile/Tablet Menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <span class="mobile-box">
+    <div class="ice-icon">
+      <svg>
+        <use href="./images/svg/symbol-defs.svg#icon-head-logo"></use>
+      </svg>
     </div>
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-toggle__icon" width="20" height="20">
+        <use href="./images/svg/symbol-defs (11) (po optymalizacji).svg#icon-close"></use>
+      </svg>
+    </button>
+  </span>
+  <ul class="nav-list">
+    <li><a class="nav-list_element" href="#">Home</a></li>
+    <li><a class="nav-list_element nav-list_element__decor" href="#">How it's made?</a></li>
+    <li><a class="nav-list_element" href="#">Our products</a></li>
+    <li><a class="nav-list_element" href="#">Contacts</a></li>
+  </ul>
+  <div class="mobile-fix">
+    <button class="purchase_button" type="submit">
+      <p>
+        Buy now
+        <svg>
+          <use href="./images/svg/symbol-defs.svg#icon-arrow-right-bold" widh="12" height="12"></use>
+        </svg>
+      </p>
+    </button>
   </div>
- 
+</div>
+
 
 <!-- Hero Header
 W headerze znajduje się logo, menu nawigacyjne oraz przycisk.
