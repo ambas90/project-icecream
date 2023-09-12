@@ -82,7 +82,7 @@
 }
 
 .horizontal-line {
-  width: 120%;
+  width: 100%;
   border: none;
   border-top: 1px solid #e1e1e1;
   margin-bottom: 20px;
@@ -105,7 +105,7 @@
   line-height: 152%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1999px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-title {
     width: 352px;
     margin-bottom: 0;
@@ -133,6 +133,7 @@
   .tablet-style {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-contact {
@@ -171,7 +172,11 @@
   .footer-icons {
     margin-top: 80px;
     margin-bottom: 40px;
-    margin-left: 602px;
+  }
+  .tablet-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .footer-link {
     font-size: 16px;
