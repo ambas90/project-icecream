@@ -1,27 +1,27 @@
 /* style dla section5-customer-reviews */
 .customer-reviews-section {
     margin-top: -859px;
-    margin-bottom: 300px;
+    margin-bottom: 385px;
 }
 
 @media screen and (min-width: 480px) {
     .customer-reviews-section {
-        margin-top: -785px;
-        margin-bottom: 226px;
+        margin-top: -875px;
+        margin-bottom: 401px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .customer-reviews-section {
         margin-top: -734px;
-        margin-bottom: 300px;
+        margin-bottom: 385px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .customer-reviews-section {
         margin-top: -589px;
-        margin-bottom: 155px;
+        margin-bottom: 240px;
     }
 }
 
