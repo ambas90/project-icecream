@@ -1,13 +1,11 @@
 /* style dla section4-gallery */
 .gallery-section {
     background-color: var(--main-bg-color);
-}
-
-.gallery {
     background-image: url('../images/background-gal-mobile.jpg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 32px;
+    background-size: cover;
     height: 1069px;
     width: 100%;
     margin: 0;
@@ -15,16 +13,15 @@
 
 
 @media screen and (min-width: 480px) {
-    .gallery {
+    .gallery-section {
         background-image: url('../images/background-gal-480.jpg');
+        height: 1159;
         background-position-y: 14px;
-        /* height: 1069px; */
-
     }
 }
 
 @media screen and (min-width: 768px) {
-    .gallery {
+    .gallery-section {
         background-image: url('../images/background-gal-tablet.jpg');
         background-position-y: 144px;
         height: 1161px;
@@ -33,7 +30,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .gallery {        
+    .gallery-section {        
         background-image: url('../images/background-gal-desktop.jpg');
         background-position-y: 98px;
         height: 1151px;
