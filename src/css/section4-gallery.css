@@ -40,13 +40,16 @@
 
 /* slide show gallery */
 
-
-
-#slideset-gallery {
+.gallery-wrapper {
     width: 280px;
     height: 130px;
-    position: relative;
+    background-color: var(--white-color);
     margin-inline: auto;
+    border-radius: 8px;
+}
+
+#slideset-gallery {
+    position: relative;
 }
 
 .gallery-img {
@@ -57,7 +60,7 @@
 }
 
 @media screen and (min-width: 480px) {
-    #slideset-gallery {
+    .gallery-wrapper {
         width: 440px;
         height: 204px;
     }
@@ -68,9 +71,10 @@
 }
 
 @media screen and (min-width: 768px) {
-    #slideset-gallery {
+    .gallery-wrapper {
         width: 704px;
         height: 327px;
+        border-radius: 18px;
     }
 
     .gallery-img {
@@ -80,11 +84,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-    #slideset-gallery {
+    .gallery-wrapper {
         width: 1013px;
         height: 422px;
-        position: relative;
-        margin-inline: auto;
+        border-radius: 24px;
     }
 
     .gallery-img {
