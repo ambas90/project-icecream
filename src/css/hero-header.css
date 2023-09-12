@@ -25,6 +25,7 @@ header,
 }
 .header_buttons {
   display: flex;
+  gap: 32px;
 }
 .menu-toggle {
   border: none;
@@ -245,7 +246,13 @@ header,
   }
 }
 @media screen and (max-width: 767px) {
-  .head-navigation {
+  .head-navigation,
+  .tablet_fix {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  .tablet {
     display: none;
   }
 }
