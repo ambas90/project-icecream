@@ -1,3 +1,4 @@
+/* czy to zakomentowane jest potrzebne? */
 *,
 *::before,
 *::after {
@@ -42,6 +43,7 @@ ul {
   transition: opacity 250ms;
   margin: 0 auto;
   overflow: auto;
+  z-index: 9;
 }
 
 .buy-now-modal_body {

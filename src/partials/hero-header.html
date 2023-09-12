@@ -5,16 +5,6 @@
       <svg width="48" height="44">
         <use href="./images/svg/symbol-defs.svg#icon-head-logo"></use>
       </svg>
-
-      <!--  chwilowo nie rozumiem jak z tym fragmentem   -->
-      <!--     </button>
-    <button class="purchase_button desktop" type="submit"  buy-now-modal1-open>
-      <p>
-        Buy now
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
-          <path
-            d="M3.97 1.227a.75.75 0 0 0 0 1.06L7.682 6 3.97 9.712a.75.75 0 0 0 1.06 1.06L9.273 6.53a.75.75 0 0 0 0-1.06L5.03 1.227a.75.75 0 0 0-1.06 0Z" />
-        </svg> powieliłem widocznie, ale właściwy button jest już na swoim miejscu. Usuwam w następnym fetchu.-->
     </div>
 
     <!-- Section for navigation with ancors -->
@@ -27,7 +17,7 @@
       </ul>
     </section>
 
-    <!-- Box for "Buy" button and mobile menu icon -->
+    <!-- Box for mobile menu icon and Buy-now-modal -->
     <div class="header_buttons">
       <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg height="32" width="32">
@@ -35,15 +25,11 @@
         </svg>
       </button>
 
-      <button class="purchase_button desktop" type="submit">
-        <p>
-          Buy now
-          <svg>
-            <use
-              href="./images/svg/symbol-defs (11) (po optymalizacji).svg#icon-s-arrow"
-              widh="12"
-              height="12"
-            ></use>
+      <button class="purchase_button desktop" type="submit" buy-now-modal1-open>
+        <p>Buy now
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+            <path
+              d="M3.97 1.227a.75.75 0 0 0 0 1.06L7.682 6 3.97 9.712a.75.75 0 0 0 1.06 1.06L9.273 6.53a.75.75 0 0 0 0-1.06L5.03 1.227a.75.75 0 0 0-1.06 0Z" />
           </svg>
         </p>
       </button>
@@ -66,19 +52,14 @@
       </span>
       <span class="hero-left-side_presentation">
         <div class="hero-left-side_presentation_hero">
-          <img
-            alt="Beautifull, colorfull ice cream with smiles"
-            class="presentation_ice_cream_plate"
-            src="./images/hero-header/ice_cream_mobile@1x.png"
-            srcset="
+          <img alt="Beautifull, colorfull ice cream with smiles" class="presentation_ice_cream_plate"
+            src="./images/hero-header/ice_cream_mobile@1x.png" srcset="
               ./images/hero-header/ice_cream_mobile@2x.png  354w,
               ./images/hero-header/ice_cream_tablet@1x.png  268w,
               ./images/hero-header/ice_cream_tablet@2x.png  536w,
               ./images/hero-header/ice_cream_desktop@1x.png 456w,
               ./images/hero-header/ice_cream_desktop@2x.png 912w
-            "
-            sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px"
-          />
+            " sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px" />
         </div>
       </span>
       <svg class="icon-dots">
@@ -98,6 +79,7 @@
   </section>
 </header>
 
+
 <!-- Mobile/Tablet Menu -->
 <div class="menu-container js-menu-container" id="mobile-menu">
   <span class="mobile-box">
@@ -106,11 +88,13 @@
         <use href="./images/svg/symbol-defs.svg#icon-head-logo"></use>
       </svg>
     </div>
+
     <button class="menu-toggle js-close-menu">
       <svg class="menu-toggle__icon" width="20" height="20">
         <use href="./images/svg/symbol-defs (11) (po optymalizacji).svg#icon-close"></use>
       </svg>
     </button>
+
   </span>
   <ul class="mobile-nav-list">
     <li><a class="nav-list_element" href="#">Home</a></li>
@@ -120,15 +104,11 @@
   </ul>
 
   <div class="mobile-fix">
-    <button class="purchase_button" type="submit">
+    <button class="purchase_button" type="submit" buy-now-modal2-open>
       <p>
         Buy now
         <svg>
-          <use
-            href="./images/svg/symbol-defs.svg#icon-arrow-right-bold"
-            widh="12"
-            height="12"
-          ></use>
+          <use href="./images/svg/symbol-defs.svg#icon-arrow-right-bold" widh="12" height="12"></use>
         </svg>
       </p>
     </button>
@@ -136,14 +116,9 @@
 </div>
 
 <!-- Hero Header
-W headerze znajduje się logo, menu nawigacyjne oraz przycisk.
-Logo na makiecie wyświetlane jest w formacie png/svg.
-Menu nawigacyjne w wersji mobilnej i tabletowej jest wyświetlane jako rozwijany pasek boczny. Menu ruchome jest stałe,
-wysokość odpowiada wysokości viewport. Menu jest zaimplementowane za pomocą linków kotwicznych, które prowadzą do
+Menu jest zaimplementowane za pomocą linków kotwicznych, które prowadzą do
 odpowiednich rozdziałów makiety.
-Przycisk “Buy now”otwiera okno modalne z formularzem zamówienia, składającym się z punktowanej listy produktów (której
-elementy zawierają ukryte pola wyboru), z wejść (należy dodać minimalną walidację danych przy wprowadzaniu za pomocą
-atrybutu pattern) oraz przycisku Submit. W przypadku wprowadzenia nieprawidłowych danych pole powinno podświetlać się na
+Przycisk “Buy now”otwiera okno modalne z formularzem zamówienia. W przypadku wprowadzenia nieprawidłowych danych pole powinno podświetlać się na
 czerwono. Walidacja nie powinna podświetlać się, dopóki użytkownik nie wprowadzi danych.
 Tekst “Ice cream made with passion” jest tytułem strony.
 Przyciski “Products” i “How it's made”, umieszczone pod tytułem, są linkami kotwicznymi do odpowiednich rozdziałów.
