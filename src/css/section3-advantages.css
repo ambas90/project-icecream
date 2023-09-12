@@ -75,7 +75,7 @@ padding-bottom: 12px;
 font-size: 14px;
 line-height: 174%; 
 width: 152px;
-height: 88px;
+height: auto;
 }
 }
 
@@ -104,5 +104,4 @@ height: 88px;
     line-height: 176%; 
 letter-spacing: 0.32px;
   }
-
 }
