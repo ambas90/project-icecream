@@ -69,7 +69,7 @@
         display: inline-block; 
         width: 200px;
         height: 200px;
-        background-image: url(../images/products-section/icecream@1x.jpg);
+        background-image: url('../images/products-section/icecream@1x.jpg');
 
         border-radius: 50%;
         background-size: cover;
