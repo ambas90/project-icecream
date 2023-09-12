@@ -33,7 +33,7 @@ header,
 }
 
 .head-navigation {
-  color: white;
+  color: var(--white-color);
 }
 
 .nav-list {
@@ -139,6 +139,7 @@ header,
 .hero-container {
   max-width: 480px;
   min-width: 300px;
+  padding-bottom: 0;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -163,7 +164,6 @@ header,
 .hero-left-side {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 .hero-left-side_navigation {
   display: flex;
@@ -218,15 +218,16 @@ header,
 }
 .hero-left-side_presentation {
   display: flex;
-  align-self: center;
+  align-self: end;
 }
-.hero-left-side_presentation_hero img {
-  min-width: 177px;
+.hero-left-side_presentation_hero {
+  width: 177px;
   max-width: 218px;
 }
 .icon-dots {
   fill: var(--default-btn-color);
-  margin-top: -120px;
+  margin-top: -70px;
+  margin-left: -40px;
 }
 
 /* Responsives elements */
