@@ -1,6 +1,7 @@
 /* HERO styles */
 .hero {
     background-color: var(--main-bg-color); 
+    padding-top: 50px;
 }
 
 
@@ -14,7 +15,7 @@
 
 .head-wrapper {
     width: 247px;
-    margin: 50px 53px 32px 20px
+    margin: 0px 53px 32px 20px
 }
 
 .main-head {
@@ -34,6 +35,26 @@
     font-weight: 400;
     line-height: 96.5%;
 }
+
+.hero-btn {
+    border: 2px solid var(--default-btn-color);
+    border-radius: 8px;
+    padding: 11px 26px;
+    color: var(--black-color);
+    margin: 0px 20px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-link {
+    color: var(--default-btn-color);
+    text-decoration: underline;
+}
+
+
 
 .franchise-numbers {
     display: none;
