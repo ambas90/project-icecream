@@ -1,10 +1,8 @@
 /* HERO styles */
 .hero {
-    background-color: var(--main-bg-color); 
-    padding-top: 50px;
+    background-color: var(--main-bg-color);
+    padding-top: 36px; 
 }
-
-
 
 .hero-container {
     position: relative;
@@ -14,8 +12,8 @@
 }
 
 .head-wrapper {
-    width: 247px;
-    margin: 0px 53px 32px 20px
+    /* width: 247px; */
+    margin: 0 53px 32px 20px
 }
 
 .main-head {
@@ -64,8 +62,6 @@
     display: none;
 }
 
-
-
 .ice-cream-img-wrapper {
     width: 177px;
     height: 217px;
@@ -85,4 +81,3 @@
     bottom: 0;
     fill: var(--default-btn-color);
 }
-
