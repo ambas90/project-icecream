@@ -12,9 +12,9 @@
   gap: 32px;
 }
 .advantages-style{
-    display: flex;
+  display: flex;
   align-items: center;
-    flex-direction: column;
+  flex-direction: column;
   gap: 16px;
 }
 .svg-advantages {
@@ -55,28 +55,28 @@
   .advantages-section{
     padding-bottom: 60px;
   }
-.advantages-list{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.advantages-style{
-  gap: 0;
+  .advantages-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .advantages-style{
+    gap: 0;
     flex-basis: calc((100% - 160px) / 3);
-}
-.advantages-numbers{
-font-size: 48px;
-letter-spacing: 1.92px;
-padding-top: 32px;
-padding-bottom: 12px;
-}
-.advantages-text{
-font-size: 14px;
-line-height: 174%; 
-width: 152px;
-height: auto;
-}
+  }
+  .advantages-numbers{
+  font-size: 48px;
+  letter-spacing: 1.92px;
+  padding-top: 32px;
+  padding-bottom: 12px;
+  }
+  .advantages-text{
+  font-size: 14px;
+  line-height: 174%; 
+  width: 152px;
+  height: auto;
+  }
 }
 
 /*desktop*/
@@ -91,7 +91,7 @@ height: auto;
     gap: 0;
   }
   .advantages-style{
-  flex-basis: calc((100% - 64px) / 3);
+    flex-basis: calc((100% - 64px) / 3);
   }
   .advantages-numbers{
     font-size: 58px;
@@ -102,6 +102,6 @@ height: auto;
     height: 52px;
     font-size: 16px;
     line-height: 176%; 
-letter-spacing: 0.32px;
+    letter-spacing: 0.32px;
   }
 }

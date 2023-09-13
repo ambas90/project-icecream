@@ -274,10 +274,7 @@
         margin-bottom: 303px;
     }
     .product-list {
-        /* display: flex; */
         flex-direction: row;
-        /* column-gap: 29px; */
-        /* flex-basis: calc((100% - 32px) / 3); */
         justify-content: space-between;
     }
     .product-card-wrap {

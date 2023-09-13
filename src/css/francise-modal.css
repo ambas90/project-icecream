@@ -40,12 +40,6 @@
     cursor: pointer;
 }
 
-/* .is-hidden {
-  pointer-events: none;
-  visibility: none;
-  opacity: 0;
-} */
-
 .francise-form {
     display: flex;
     flex-direction: column;
