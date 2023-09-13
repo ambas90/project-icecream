@@ -1,7 +1,3 @@
-/* style dla footer */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 .footer {
   background-color: var(--main-bg-color);
 }
@@ -17,9 +13,7 @@
   text-transform: uppercase;
   margin-top: 60px;
   padding-bottom: 16px;
-  font-family: Montserrat;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
@@ -27,7 +21,6 @@
   color: var(--white-color);
   text-transform: uppercase;
   font-size: 34px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.36px;
@@ -42,13 +35,23 @@
   gap: 20px;
 }
 
-.social-icon {
-  width: 34px;
-  height: 34px;
-  fill: var(--ice-coffee-bg-color);
-  border-radius: 100%;
+.footer-icons a {
+  display: flex;
+  padding: 7px;
+  background-color: var(--default-btn-color);
+  border-radius: 50%;
 }
-.social-icon:hover .social-icon:focus {
+
+.social-icon {
+  fill: var(--main-bg-color);
+  display: flex;
+  align-self: center;
+  margin: auto;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  cursor: pointer;
   fill: var(--light-bg-font-color);
 }
 
@@ -66,6 +69,7 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 40px;
+  gap: 5px;
 }
 
 .footer-link {
@@ -78,7 +82,7 @@
 }
 
 .horizontal-line {
-  width: 120%;
+  width: 100%;
   border: none;
   border-top: 1px solid #e1e1e1;
   margin-bottom: 20px;
@@ -101,7 +105,7 @@
   line-height: 152%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1999px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-title {
     width: 352px;
     margin-bottom: 0;
@@ -129,6 +133,7 @@
   .tablet-style {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-contact {
@@ -140,6 +145,11 @@
     margin-top: 12px;
     display: flex;
     justify-content: center;
+  }
+  .social-icon:hover,
+  .social-icon:focus {
+    cursor: pointer;
+    fill: var(--light-bg-font-color);
   }
 }
 
@@ -162,12 +172,21 @@
   .footer-icons {
     margin-top: 80px;
     margin-bottom: 40px;
-    margin-left: 602px;
+  }
+  .tablet-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .footer-link {
     font-size: 16px;
   }
   .footer-text {
     font-size: 16px;
+  }
+  .social-icon:hover,
+  .social-icon:focus {
+    cursor: pointer;
+    fill: var(--light-bg-font-color);
   }
 }

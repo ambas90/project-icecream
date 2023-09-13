@@ -1,36 +1,61 @@
-<section class="products-section">
-    <div class="container">
-        <p class="product-text">100% natural</p>
-        <h2 class="product-title">Products</h2>
+<section class="products-section" id="our-products">
+    <div class="container product-container">
+        <div class="text-wrap">
+            <p class="product-text">100% natural</p>
+            <h2 class="product-title">Products</h2>
+        </div>
+
         <ul class="product-list">
-            <li>
-                <h3 class="product-card-heading">Ice Cream</h3>
-                <p class="products-card-text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and
-                    natural stabilizer</p> <button type="button">strzałka</button>
-            </li>
-            <li>
-                <h3 class="product-card-heading">Ice Coffee</h3>
-                <p class="products-card-text">Fragrant invigorating drink created from 100% natural ingredients
-                    without the use of preservatives and flavor enhancers</p> <button type="button">strzałka</button>
-            </li>
-            <li>
-                <h3 class="product-card-heading">Milkshakes</h3>
-                <p class="products-card-text">Sweet drinks based on milk and ice cream, supplemented with
-                    syrups, fruits, berries and other sweets of your choice</p> <button type="button">strzałka</button>
-            </li>
+
+            <div class="product-card-wrap ice-cream">
+                <li>
+                    <img class="ellipse" alt="ellipse" src="./images/products-section/ellipse@1x.png">
+                    <div class="card-text-wrap>">
+                        <h3 class="product-card-heading ">Ice Cream</h3>
+                        <p class="products-card-text cream-card">Soft ice cream with a delicate taste. Made with milk,
+                            cream, sugar and
+                            natural stabilizer</p>
+                    </div>
+                    <button type="button" class="product-button ice-btn" ingredients-modal-ice-cream-open><svg
+                            width="40px" height="16px">
+                            <use href="./images/svg/symbol-defs.svg#icon-Arrow-1">
+                        </svg></button>
+                </li>
+            </div>
+
+            <div class="product-card-wrap ice-coffee">
+
+                <li>
+                    <img class="ellipse" alt="ellipse" src="./images/products-section/ellipsey@1x.png">
+                    <div class="card-text-wrap>">
+                        <h3 class="product-card-heading ">Ice Coffee</h3>
+                        <p class="products-card-text coffee-card">Fragrant invigorating drink created from 100% natural
+                            ingredients
+                            without the use of preservatives and flavor enhancers</p>
+                    </div>
+                    <button type="button" class="product-button coffee-btn" ingredients-modal-ice-coffee-open><svg
+                            width="40px" height="16px">
+                            <use href="./images/svg/symbol-defs.svg#icon-Arrow-1">
+                        </svg></button>
+                </li>
+            </div>
+
+            <div class="product-card-wrap milkshake">
+
+                <li>
+                    <img class="ellipse" alt="ellipse" src="./images/products-section/ellipser@1x.png">
+                    <div class="card-text-wrap>">
+                        <h3 class="product-card-heading">Milkshakes</h3>
+                        <p class="products-card-text milk-card">Sweet drinks based on milk and ice cream, supplemented
+                            with
+                            syrups, fruits, berries and other sweets of your choice</p>
+                    </div>
+                    <button type="button" class="product-button milk-btn" ingredients-modal-milkshakes-open><svg
+                            width="40px" height="16px">
+                            <use href="./images/svg/symbol-defs.svg#icon-Arrow-1">
+                        </svg></button>
+                </li>
+            </div>
         </ul>
     </div>
 </section>
-
-
-
-
-
-<!-- Products
-“100% natural” - jest etykietą tytułu i nie wyróżnia się znacznikiem nagłówka.
-“products” – jest tytułem sekcji.
-Karty produktów zaprojektować jako siatkę elementów.
-Obrazy na kartach produktów są dekoracyjne, należy je zaimplementować pseudo elementami.
-Nazwy produktów są nagłówkami.
-Przycisk ze strzałką na dole karty powinien otwierać okno modalne ze szczegółowym opisem produktu i formularzem do jego
-zamówienia. -->
