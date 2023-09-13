@@ -3,10 +3,6 @@
   background-color: var(--main-bg-color);
 }
 
-/* #how-its-made:hover .menu-mobile {
-  visibility: hidden;
-} */
-
 .about-container {
   position: relative;
   min-height: 570px;
