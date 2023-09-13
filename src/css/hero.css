@@ -1,136 +1,67 @@
 /* HERO styles */
-
 .hero {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color); 
 }
+
+
 
 .hero-container {
-    max-width: 480px;
-    min-width: 300px;
-    padding-bottom: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    position: relative;
+    margin-inline: auto;
+    width: 320px;
+    height: 459px;
 }
 
-.hero-left-side h1 {
-    font-family: 'Seymour One';
-    font-size: 34px;
-    letter-spacing: 1.04px;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
+.head-wrapper {
+    width: 247px;
+    margin: 50px 53px 32px 20px
 }
 
-.hero-left-side p {
+.main-head {
+    color: var(--light-bg-font-color);
+    font-family: Seymour One;
     font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     letter-spacing: 1.04px;
     text-transform: uppercase;
-    margin: 0;
 }
 
-.hero-left-side {
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-left-side_navigation {
-    display: flex;
-    gap: 12px;
-    padding-top: 10px;
-    padding-bottom: 19px;
-    align-items: center;
-}
-
-.hero-left-side_navigation_button {
-    border: 2px solid #f8d24e;
-    border-radius: 8px;
-    background-color: inherit;
-    width: 108px;
-    height: 38px;
-}
-
-.hero-left-side_navigation_button:hover {
-    border: 2px solid var(--hover-btn-color);
-}
-
-.hero-left-side_navigation_button:focus,
-.hero-left-side_navigation_button p:focus {
-    border: 2px solid var(--hover-btn-color);
-    color: var(--white-color);
-}
-
-.hero-left-side_navigation_button:disabled {
-    border: 2px solid var(--disabled-btn-colo);
-}
-
-.hero-left-side_navigation_button p {
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 15px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.hero-left-side_navigation_nav {
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 15px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: var(--default-btn-color);
-    width: 114px;
-    height: 24px;
-}
-
-.hero-left-side_navigation_nav:hover {
-    color: var(--hover-btn-color);
-}
-
-.hero-left-side_navigation_nav:focus {
-    color: var(--white-color);
-}
-
-.hero-left-side_navigation_nav:disabled {
-    color: var(--disabled-btn-color);
-}
-
-.hero-left-side_presentation {
-    display: flex;
-    width: 152px;
-}
-
-.hero-left-side_presentation_description {
-    font-family: DM Sans;
-    font-size: 14px;
+.passion {
+    font-size: 34px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
+    line-height: 96.5%;
 }
 
-.hero-left-side_presentation_icon {
-    fill: #fcfcfc;
+.franchise-numbers {
+    display: none;
 }
 
-.hero-right-side_presentation_hero {
+.hero-text {
+    display: none;
+}
+
+
+
+.ice-cream-img-wrapper {
+    width: 177px;
+    height: 217px;
+    position: absolute;
+    bottom: 0;
+    left: 83px;
+}
+
+.ice-cream-img {
+    display: block;
     width: 100%;
     height: auto;
 }
 
 .icon-dots {
+    position: absolute;
+    bottom: 0;
     fill: var(--default-btn-color);
-    margin-top: -70px;
-    margin-left: -40px;
 }
 
-
-
-/* Responsives elements */
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .hero-right-side_presentation_hero {
-        max-width: 218px;
-    }
-}
