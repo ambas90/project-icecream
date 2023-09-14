@@ -1,9 +1,7 @@
 /* HERO styles */
-/* .hero {
+.hero {
     background-color: var(--main-bg-color); 
 }
-
-
 
 .hero-container {
     position: relative;
@@ -13,8 +11,7 @@
 }
 
 .head-wrapper {
-    width: 247px;
-    margin: 50px 53px 32px 20px
+    margin: 0 53px 32px 20px
 }
 
 .main-head {
@@ -35,6 +32,24 @@
     line-height: 96.5%;
 }
 
+.hero-btn {
+    border: 2px solid var(--default-btn-color);
+    border-radius: 8px;
+    padding: 11px 26px;
+    color: var(--black-color);
+    margin: 0px 20px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-link {
+    color: var(--default-btn-color);
+    text-decoration: underline;
+}
+
 .franchise-numbers {
     display: none;
 }
@@ -42,8 +57,6 @@
 .hero-text {
     display: none;
 }
-
-
 
 .ice-cream-img-wrapper {
     width: 177px;
@@ -64,7 +77,6 @@
     bottom: 0;
     fill: var(--default-btn-color);
 }
-*/
 
 .hero {
     background: var(--main-bg-color);
@@ -117,7 +129,8 @@ screen and (min-width:768px) and (min-resolution: 2dppx) {
 @media screen and (min-width: 1200px) {
         .container-background {
         background: url(../images/hero-header/desktop-balls@1x.png) bottom center / 1200px 384px no-repeat;
-        }}
+        }
+}
 
 @media screen and (min-width:1200px) and (min-device-pixel-ratio: 2), screen and (min-width:1200px) and
         (min-resolution: 192dpi), screen and (min-width:1200px) and
@@ -125,7 +138,7 @@ screen and (min-width:768px) and (min-resolution: 2dppx) {
         .container-background {
             background: url(../images/hero-header/desktop-balls@2x.png) bottom center / 1200px 384px no-repeat;
         }
-    }
+}
 
 .hero-content {
     position: relative;

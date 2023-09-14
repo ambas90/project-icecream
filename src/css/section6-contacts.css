@@ -150,7 +150,6 @@
   .contacts {
     height: 360px;
   }
-
   .contacts-list-flex {
     display: flex;
     flex-direction: column;
@@ -263,5 +262,6 @@
     text-decoration: underline;
   }
   .contacts-buttons {
-  padding-top: 474px;
+    padding-top: 474px;
+  }
 }

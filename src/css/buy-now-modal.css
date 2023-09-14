@@ -4,17 +4,9 @@
   box-sizing: border-box;
 }
 
-img {
-  display: block;
-}
-
 * {
   padding: 0;
   margin: 0;
-}
-
-ul {
-  list-style: none;
 }
 
 .is-hidden {
@@ -62,13 +54,13 @@ ul {
 }
 
 .buy-now-modal_body h3 {
-    padding-inline: 74px;
-    text-align: center;
-    margin-top: 28px;
-    font-family: Seymour One;
-    font-size: 2rem;
-    color: var(--dark-font-color);
-    font-weight: bold;
+  text-align: center;
+  margin-top: 28px;
+  font-family: Seymour One;
+  font-size: 2rem;
+  color: var(--dark-font-color);
+  font-weight: bold;
+  padding-inline: 74px;
 }
 
 @media screen and (min-width: 768px) {
@@ -345,62 +337,62 @@ box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px #00000040;
 }
 
 .buy-now-paragraph {
-    position: absolute;
-    top: 96px;
-    left: 13px;
-    font-weight: 700;
-    font-size: 16;
-    line-height: 1.25;
-    letter-spacing: 0.04em;
-    color: #131313;
-    cursor:pointer;
+  position: absolute;
+  top: 96px;
+  left: 13px;
+  font-weight: 700;
+  font-size: 16;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  color: #131313;
+  cursor:pointer;
 }
 
 .buy-now-properties {
-    width: 224px;
-    height: 32px;
-    border: 1px solid var(--main-bg-color);
-    background: #F8D24E1A;
-    border-radius: 10px;
-    margin-inline: 28px;
-    padding-left: 12px;
-    color: var(--dark-font-color);
-    font-size: 14;
-    line-height:1.4;
+  width: 224px;
+  height: 32px;
+  border: 1px solid var(--main-bg-color);
+  background: #F8D24E1A;
+  border-radius: 10px;
+  margin-inline: 28px;
+  padding-left: 12px;
+  color: var(--dark-font-color);
+  font-size: 14;
+  line-height:1.4;
 }
 
 .buy-now-textarea {
-    resize: none;
-    width: 224px;
-    height: 65px;
-    border: 1px solid var(--main-bg-color);
-    background: #F8D24E1A;
-    border-radius: 10px;
-    margin-inline: 28px;
-    padding-left: 12px;
-    color: var(--dark-font-color);
-    font-size: 14;
-    font-family: Montserrat;
-    line-height: 1.4;
-    padding-top: 11px;
+  width: 224px;
+  height: 65px;
+  border: 1px solid var(--main-bg-color);
+  background: #F8D24E1A;
+  border-radius: 10px;
+  margin-inline: 28px;
+  padding-left: 12px;
+  color: var(--dark-font-color);
+  resize: none;
+  font-size: 14;
+  font-family: Montserrat;
+  line-height: 1.4;
+  padding-top: 11px;
 }
 
 @media screen and (min-width:768px) {
-    .buy-now-properties {
-        width: 368px;
-        height: 42px;
-        margin-inline: 100px;
-        padding-left: 16px;
-    }
+  .buy-now-properties {
+    width: 368px;
+    height: 42px;
+    margin-inline: 100px;
+    padding-left: 16px;
+  }
 }
 
 @media screen and (min-width:768px) {
-    .buy-now-textarea {
-        width: 368px;        
-        margin-inline: 100px;
-        height: 84px;
-        padding-left: 16px;
-    }
+  .buy-now-textarea {
+    width: 368px;        
+      margin-inline: 100px;
+      height: 84px;
+      padding-left: 16px;
+  }
 }
 
 

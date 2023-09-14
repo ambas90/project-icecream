@@ -4,23 +4,9 @@
     box-sizing: border-box;
 }
 
-/* img {
-    display: block;
-} */
-
 * {
     padding: 0;
     margin: 0;
-}
-
-/* wydaje się nie potrzebne */
-/* .container {
-    margin: 0 auto;
-    padding: 0 16px;
-} */
-
-/* ul {
-    list-style: none;
 }
 
 .is-hidden {
@@ -28,17 +14,15 @@
     pointer-events: none;
     visibility: hidden;
     transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
-} */
+}
 
-
-/* wydaje się nie potrzebne */
-/* .is-hidden .ingredients-modal-body {
+.is-hidden .ingredients-modal-body {
     scale: 0;
 }
 
 .modal:not(.is-hidden) .ingredients-modal-body {
     scale: 1;
-} */
+}
 
 .ingredients-modal {
     position: fixed;
