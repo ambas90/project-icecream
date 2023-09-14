@@ -1,0 +1,78 @@
+<!-- Just HEADER section -->
+
+<header>
+  <div class="header-container">
+    <!-- Box for icon.svg -->
+    <div class="ice-icon">
+      <svg width="48" height="44">
+        <use href="./images/svg/symbol-defs.svg#icon-head-logo"></use>
+      </svg>
+    </div>
+
+    <!-- Section for navigation with ancors -->
+    <section class="head-navigation desktop">
+      <ul class="nav-list">
+        <li><a class="nav-list_element" href="#hero">Home</a></li>
+        <li><a class="nav-list_element" href="#how-its-made">How it's made?</a></li>
+        <li><a class="nav-list_element" href="#our-products">Our products</a></li>
+        <li><a class="nav-list_element" href="#contacts">Contacts</a></li>
+      </ul>
+    </section>
+
+    <!-- Box for mobile menu icon and Buy-now-modal -->
+    <div class="header_buttons">
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg height="32" width="32">
+          <use href="./images/svg/symbol-defs (11) (po optymalizacji).svg#icon-menu-burger"></use>
+        </svg>
+      </button>
+
+      <button class="purchase_button tablet_fix" type="submit" buy-now-modal1-open>
+        <p>
+          Buy now
+         <svg width="12px" height="12px">
+          <use href="./images/svg/symbol-defs.svg#icon-arrow-right-bold">
+        </svg>
+        </p>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile/Tablet Menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="mobile-box">
+    <div class="ice-icon">
+      <svg width="48" height="44">
+        <use href="./images/svg/symbol-defs.svg#icon-head-logo"></use>
+      </svg>
+    </div>
+
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-toggle__close-icon" width="20" height="20">
+        <use href="./images/svg/symbol-defs (11) (po optymalizacji).svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <ul class="mobile-nav-list">
+    <li><a class="nav-list_element js-close-menu" href="#hero">Home</a></li>
+    <li><a class="nav-list_element js-close-menu" href="#how-its-made">How it's made?</a></li>
+    <li><a class="nav-list_element js-close-menu" href="#our-products">Our products</a></li>
+    <li><a class="nav-list_element js-close-menu" href="#contacts">Contacts</a></li>
+  </ul>
+
+  <div class="mobile-fix">
+    <button class="purchase_button tablet" type="submit" buy-now-modal2-open>
+      <p>
+        Buy now
+        <svg>
+          <use
+            href="./images/svg/symbol-defs.svg#icon-arrow-right-bold"
+            widh="12"
+            height="12"
+          ></use>
+        </svg>
+      </p>
+    </button>
+  </div>
+</div>

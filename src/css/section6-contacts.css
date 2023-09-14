@@ -71,6 +71,7 @@
   color: var(--milkshakes-bg-color);
   line-height: 1.83em;
   padding-top: 8px;
+  cursor: pointer;
 }
 .contact-link {
   color: var(--dark-font-color);
@@ -149,7 +150,6 @@
   .contacts {
     height: 360px;
   }
-
   .contacts-list-flex {
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@
   .street {
     line-height: 1.83em;
   }
-    .contacts-list-div {
+  .contacts-list-div {
     padding: 32px 0px 24px 0px;
   }
   .contact-link {
@@ -262,6 +262,6 @@
     text-decoration: underline;
   }
   .contacts-buttons {
-  padding-top: 474px;
+    padding-top: 474px;
   }
 }

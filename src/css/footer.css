@@ -82,7 +82,7 @@
 }
 
 .horizontal-line {
-  width: 120%;
+  width: 100%;
   border: none;
   border-top: 1px solid #e1e1e1;
   margin-bottom: 20px;
@@ -92,7 +92,7 @@
   text-align: center;
   display: block;
   justify-content: center;
-  gap: 0;
+  gap: 10px;
   margin-bottom: 24px;
 }
 
@@ -133,6 +133,7 @@
   .tablet-style {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-contact {
@@ -144,6 +145,7 @@
     margin-top: 12px;
     display: flex;
     justify-content: center;
+    gap: 5px;
   }
   .social-icon:hover,
   .social-icon:focus {
@@ -171,13 +173,20 @@
   .footer-icons {
     margin-top: 80px;
     margin-bottom: 40px;
-    margin-left: 602px;
+  }
+  .tablet-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .footer-link {
     font-size: 16px;
   }
   .footer-text {
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
   }
   .social-icon:hover,
   .social-icon:focus {
