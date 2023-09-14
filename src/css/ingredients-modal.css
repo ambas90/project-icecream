@@ -384,7 +384,7 @@ screen and (min-width: 768px) and (min-resolution: 2x) {
     height: 43px;
     background: #9cbe8f;
     border-radius: 50%;
-    box-shadow: 0px 6px 20px 0px #00000040;;
+    box-shadow: 0px 6px 20px 0px #0a881773;
 }
 
 .ingredients-modal-item2 {
@@ -399,9 +399,9 @@ screen and (min-width: 768px) and (min-resolution: 2x) {
     top: -1px;
     width: 43px;
     height: 43px;
-    background: #F8D24E;
+    background: var(--default-btn-color);
     border-radius: 50%;
-    box-shadow: 0px 6px 20px 0px #00000040;
+    box-shadow: 0px 6px 20px 0px #99721783;
 }
 
 .ingredients-modal-item3 {
@@ -418,7 +418,7 @@ screen and (min-width: 768px) and (min-resolution: 2x) {
     height: 43px;
     background: #D5753F;
     border-radius: 50%;
-    box-shadow: 0px 6px 20px 0px #00000040;
+    box-shadow: 0px 6px 20px 0px #ac501aa1;
 }
 
 @media screen and (min-width:768px) {
