@@ -100,19 +100,18 @@ header {
 .purchase_button svg {
   width: 12px;
   height: 12px;
-  fill: var(--black-color);
 }
-.purchase_button:focus {
-  color: var(--white-color);
-}
-.purchase_button svg:focus {
-  fill: var(--white-color);
-}
+
 .purchase_button:hover,
 .purchase_button:focus {
   background: var(--hover-btn-color);
   border: none;
 }
+.purchase_button:focus {
+  color: var(--white-color);
+  fill: var(--white-color);
+}
+
 .mobile-fix {
   padding-bottom: 88px;
   padding-top: 114px;
@@ -143,7 +142,6 @@ header {
   width: 100%;
   padding: 12px 20px;
 }
-
 
 @media screen and (max-width: 767px) {
   .head-navigation,
