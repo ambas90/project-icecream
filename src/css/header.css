@@ -40,6 +40,7 @@ header {
 .header_buttons {
   display: flex;
   gap: 32px;
+  align-items: flex-end;
 }
 .menu-toggle {
   border: none;
