@@ -4,23 +4,9 @@
     box-sizing: border-box;
 }
 
-img {
-    display: block;
-}
-
 * {
     padding: 0;
     margin: 0;
-}
-
-.container {
-    margin: 0 auto;
-    width: 50%;
-    padding: 0 16px;
-}
-
-ul {
-    list-style: none;
 }
 
 .is-hidden {
@@ -48,6 +34,7 @@ ul {
     transition: opacity 250ms;
     margin: 0 auto;
     overflow: auto;
+    z-index: 9;
 }
 
 .ingredients-modal-body {
@@ -75,11 +62,14 @@ ul {
     font-size: 20px;
     line-height: 1.5;
     color: #131313;
+    max-width: 142px;
+    margin-inline: auto;
 }
 
 @media screen and (min-width: 768px) {
-    .ingredients-modal_body h2 {
+    .ingredients-modal-body h2 {
         margin-top: 32px;
+        max-width:274px;
     }
 }
 
@@ -394,7 +384,7 @@ screen and (min-width: 768px) and (min-resolution: 2x) {
     height: 43px;
     background: #9cbe8f;
     border-radius: 50%;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, .25);
+    box-shadow: 0px 6px 20px 0px #0a881773;
 }
 
 .ingredients-modal-item2 {
@@ -409,9 +399,9 @@ screen and (min-width: 768px) and (min-resolution: 2x) {
     top: -1px;
     width: 43px;
     height: 43px;
-    background: #F8D24E;
+    background: var(--default-btn-color);
     border-radius: 50%;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, .25);
+    box-shadow: 0px 6px 20px 0px #99721783;
 }
 
 .ingredients-modal-item3 {
@@ -428,7 +418,7 @@ screen and (min-width: 768px) and (min-resolution: 2x) {
     height: 43px;
     background: #D5753F;
     border-radius: 50%;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, .25);
+    box-shadow: 0px 6px 20px 0px #ac501aa1;
 }
 
 @media screen and (min-width:768px) {

@@ -1,13 +1,12 @@
 /* style dla section1-products */
 .products-section {
     background: var(--white-color);
-    background-image:url(../images/background-gal-480.jpg) ;
+    background-image:url(../images/background-gal-mobile.jpg) ;
     background-position: center;
     background-size: cover;
     padding: 60px 0;
     min-width: 320px;
 }
-
 
 .text-wrap {
     display: flex;
@@ -16,38 +15,33 @@
     align-items: center;
     
 }
-.product-text{
-        
-        font-size: 18px;
-        font-weight: 800;
-        line-height: normal;
-        text-transform: uppercase;
+.product-text{  
+    font-size: 18px;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
         
 }
 .product-title {
-        font-family: 'Seymour One', sans-serif;
-        font-size: 30px;
-        line-height: normal;
-        letter-spacing: 1.2px;
-        text-transform: uppercase;
-        margin-bottom: 144px;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 144px;
 }
 
 .product-list {
     display: flex;
     flex-direction: column;
-    
     row-gap: 168px;
-
-    
+    align-items: center;
 }
 
 .product-card-wrap {
     border-radius: 24px;
     min-height: 420px;
-   
-    
-
+    width: 280;
 }
 
 .ice-cream {
@@ -61,72 +55,82 @@
 .milkshake {
     background-color: var(--milkshakes-bg-color);
     position: relative;
-
 }
+
 .ice-cream::before {
     content: "";
-        display: inline-block; 
-        width: 200px;
-        height: 200px;
-        background-image: url(../images/products-section/icecream1.jpg);
-        border-radius: 50%;
-        background-size: cover;
-        position:absolute;
-        bottom: 385px;
-            left: 50%;
-            transform: translate(-50%);
+    display: inline-block; 
+    width: 200px;
+    height: 200px;
+    background-image: url('../images/products-section/icecream@1x.jpg');
+    border-radius: 50%;
+    background-size: cover;
+    position:absolute;
+    bottom: 385px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+           
 }
+.ellipse {
+    position: absolute;
+    top: 0%;
+    right: 20px;
+    translate: 0 -46% 0;
+    z-index: 1;
+    width: 240px;
+    height: 240px;
+}
+
 .ice-coffee::before {
     content: "";
     display: inline-block;
     width: 200px;
     height: 200px;
-    background-image: url(../images/products-section/icecoffee1.jpg);
+    background-image: url(../images/products-section/icecoffee@1x.jpg);
     border-radius: 50%;
     background-size: cover;
     position: absolute;
     bottom: 340px;
     left: 50%;
     transform: translate(-50%);
+    z-index: 2;
 }
 .milkshake::before {
     content: "";
     display: inline-block;
     width: 200px;
     height: 200px;
-    background-image: url(../images/products-section/milkshake1.jpg);
+    background-image: url(../images/products-section/milkshake@1x.jpg);
     border-radius: 50%;
     background-size: cover;
     position: absolute;
     bottom: 360px;
     left: 50%;
     transform: translate(-50%);
+    z-index: 2;
 }
    
 .product-card-heading {
-   
-        text-align: center;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.8px;
-        text-transform: uppercase;
-        margin-top: 123px;
-        margin-bottom: 40px;
-        
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-top: 123px;
+    margin-bottom: 40px;   
 }
 
-
 .products-card-text {
-        text-align: center;
-        font-size: 14px;
-        line-height: 0,24; /* 24.64px */
-        letter-spacing: 0.56px;
-        margin: 0 40px;
-        min-width: 200px;
-        min-height: 148px;
-        
-   
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.76; 
+    letter-spacing: 0.56px;
+    margin: 0 40px;
+    min-width: 200px;
+    min-height: 148px;
+    flex-shrink: 0;
 }
 
 .cream-card {margin-bottom: 101px;}
@@ -151,4 +155,178 @@
 }
 .milk-btn {
     background-color: var(--milkshakes-bg-color);
+}
+
+
+@media screen and (min-width: 480px) {
+    .products-section { 
+        background-image: url(../images/background-gal-480.jpg);
+    }
+    .product-card-wrap {
+        border-radius: 24px;
+        min-height: 428px;
+        width:320px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .ellipse {
+        position: absolute;
+        top: 0.5%;
+        right: 39px;
+        translate: 0 -46% 0;
+        z-index: 1;
+        width:240px;
+        height: 250px;
+    }
+    .product-button {
+        margin-left: 140px;
+    }
+    .cream-card {
+        margin-bottom: 106px;
+    }
+    .coffee-card {
+        margin-bottom: 61px;
+    }
+    .milk-card {
+        margin-bottom: 81px;
+    }      
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .products-section {
+        background-image: url(../images/background-gal-tablet.jpg);
+    }
+    .product-text {
+        font-size: 22px;
+    }
+    .product-title {
+        font-size: 34px;
+        letter-spacing: 1.3px;
+        margin-bottom: 200px;
+    }
+    .product-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .product-card-wrap {
+        border-radius: 24px;
+        min-height: 428px;
+        width: 224px;
+        margin: 0;
+    }
+    .ellipse {
+        position: absolute;
+        top: -1.5%;
+        right: 0px;
+        translate: 0 -46% 0;
+        z-index: 1;
+        width: 240px;
+        height: 240px;
+    }
+    .ice-coffee::before {
+        bottom: 378px;
+    }
+    .milkshake::before {
+        bottom: 378px;
+    }
+    .product-card-heading {
+        font-size: 22px;
+        letter-spacing: 0.88px;
+        margin-top: 108px;
+    }
+    .products-card-text {
+        margin: 0 26px;
+        min-width: 172px;
+        min-height: 175px;
+    }
+    .cream-card {
+        margin-bottom: 81px;
+    }
+    .coffee-card {
+        margin-bottom: 81px;
+    }
+    .milk-card {
+        margin-bottom: 81px;
+    }
+    .product-button {
+        margin-left: 92px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    .products-section {
+        background-image: url(../images/background-gal-desktop.jpg);
+    }
+    .product-text {
+        font-size: 30px;
+        letter-spacing: 1.3px;
+    }
+    .product-title {
+        font-size: 36px;
+        letter-spacing: 2.16px;
+        margin-bottom: 303px;
+    }
+    .product-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .product-card-wrap {
+        border-radius: 24px;
+        min-height: 536px;
+        min-width: 370px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-text-wrap {
+        width: 246px;
+    }
+    .ice-cream::before {
+        width: 302px;
+        height: 302px;
+        background-image: url(../images/products-section/icream@2x.jpg);
+        bottom: 450px;
+    }
+    .ellipse {
+        position: absolute;
+        top: 0%;
+        right: 5px;
+        translate: 0 -50% 0;
+        z-index: 1;
+        width:360px;
+        height:360px
+    }
+    .ice-coffee::before {
+        width: 302px;
+        height: 302px;
+        background-image: url(../images/products-section/icecoffee@2x.jpg);
+        bottom: 450px;
+    }
+    .milkshake::before {
+        width: 302px;
+        height: 302px;
+        background-image: url(../images/products-section/milkshake@2x.jpg);
+        bottom: 450px;
+    }
+    .product-card-heading {
+        font-size: 30px;
+        letter-spacing: 1,2px;
+        margin-top: 165px;
+    }
+    .products-card-text {
+        margin: 66px 64px 50px;
+    }
+    .product-button {
+        margin-bottom: 60px;
+        margin-left: 165px;
+    }
 }

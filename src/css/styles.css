@@ -1,4 +1,5 @@
-@import url('./hero-header.css');
+@import url('./header.css');
+@import url('./hero.css');
 @import url('./section1-products.css');
 @import url('./section2-about.css');
 @import url('./section3-advantages.css');
@@ -6,6 +7,12 @@
 @import url('./section5-customer-reviews.css');
 @import url('./section6-contacts.css');
 @import url('./footer.css');
+
+@import url("./buy-now-modal.css");
+@import url("./ingredients-modal.css");
+@import url("./our-location-modal.css");
+@import url("./francise-modal.css");
+
 
 /* Style ogólne, np. dla body, wszystkich sekcji itp */
 :root {
@@ -92,7 +99,6 @@ a {
   margin: 1px;
   border: 0px;
   padding: 0px;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);

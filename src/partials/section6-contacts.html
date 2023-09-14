@@ -1,8 +1,8 @@
 <section class="contacts">
-    <div class="container contacts-list-flex">
-        <h2 class="contacts-title visually-hidden">Contacts</h2> <!--do ukrycia-->
+  <div class="container contacts-list-flex">
+    <h2 class="contacts-title visually-hidden">Contacts</h2> <!--do ukrycia-->
 
-    <ul class="contacts-list">
+    <ul class="contacts-list" id="contacts">
       <li>
         <p class="contact-category">Cafe</p>
         <address class="contact-text contact-address contact-text-address">
@@ -51,74 +51,62 @@
           <p class="contact-text">Saturday-Sunday</p>
           <p class="contact-text open-time">08:00 AM - 16:00 PM</p>
         </div>
-          <address class="contact-address">
-            <a class="contact-link" href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a> <br />
-            <a class="contact-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
-          </address>
-        </li>
-      </ul>
-  
-      
+        <address class="contact-address">
+          <a class="contact-link" href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a> <br />
+          <a class="contact-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+        </address>
+      </li>
+    </ul>
+
     <div class="contacts-buttons">
       <button type="button" class="location-button contacts-button-style" our-location-modal-open>Our Locations
-            <svg class="location-button-arrow">
-              <use href="./images/svg/symbol-defs.svg#icon-arrow-right-bold" />
-            </svg>
+        <svg class="location-button-arrow">
+          <use href="./images/svg/symbol-defs.svg#icon-arrow-right-bold" />
+        </svg>
       </button>
-      <button type="button" class="franchise-button contacts-button-style" data-modal-open>
+      <button type="button" class="franchise-button contacts-button-style" francise-modal-open>
         Franchise
-            <svg class="franchise-button-arrow">
-              <use href="./images/svg/symbol-defs.svg#icon-arrow-right-bold" />
-            </svg></button>
+        <svg class="franchise-button-arrow">
+          <use href="./images/svg/symbol-defs.svg#icon-arrow-right-bold" />
+        </svg></button>
       </button>
     </div>
-      
-        <!-- Francise modal -->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="francise-modal">
-                <button class="close-modal-button" data-modal-close>
-                    <svg class="icon-close-modal">
-                        <use href="./images/svg/symbol-defs.svg#icon-close" />
-                    </svg>
-                </button>
 
-                <form name="francise-form" class="francise-form">
-                    <h4>Thank you for your interest in owning an Ice Cream shop</h4>
-                    <p>
-                        Due to the overwhelming volume of franchise requests we are not accepting new
-                        franchisee applications at this time. Once the application process resumes, we will
-                        contact you for further information. Please fill out the contact information below and
-                        we will reach out for additional information. We appreciate your patience.
-                    </p>
-                    <div class="inputs-container" role="form-inputs">
-                        <label>
-                            <input type="text" name="user-name" class="basic-input" placeholder="Name" required />
-                        </label>
-                        <label>
-                            <input type="tel" name="user-phone" class="basic-input" placeholder="Phone" />
-                        </label>
-                        <label>
-                            <input type="email" name="comment-user-email" class="basic-input" placeholder="Email"
-                                required />
-                        </label>
-                        <label>
-                            <textarea name="user-comment" placeholder="Comment"></textarea>
-                        </label>
-                    </div>
-                    <button class="send-form-button" type="submit">Submit</button>
-                </form>
-            </div>
-        </div>
+    <!-- Francise modal -->
+    <div class="backdrop is-hidden" francise-modal>
+      <div class="francise-modal">
+        <button class="francise-modal-button" francise-modal-close>
+          <svg class="francise-icon-close-modal" width="12" height="12">
+            <use href="./images/svg/symbol-defs.svg#icon-close" />
+          </svg>
+        </button>
+
+        <form name="francise-form" class="francise-form">
+          <h4>Thank you for your interest in owning an Ice Cream shop</h4>
+          <p>
+            Due to the overwhelming volume of franchise requests we are not accepting new
+            franchisee applications at this time. Once the application process resumes, we will
+            contact you for further information. Please fill out the contact information below and
+            we will reach out for additional information. We appreciate your patience.
+          </p>
+          <div class="francise-inputs-container" role="form-inputs">
+            <label>
+              <input type="text" name="user-name" class="francise-input" placeholder="Name" required />
+            </label>
+            <label>
+              <input type="tel" name="user-phone" class="francise-input" placeholder="Phone" />
+            </label>
+            <label>
+              <input type="email" name="comment-user-email" class="francise-input" placeholder="Email" required />
+            </label>
+            <label>
+              <textarea name="user-comment" placeholder="Comment"></textarea>
+            </label>
+          </div>
+          <button class="send-form-button" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
+  </div>
 
 </section>
-
-<!-- Contacts
-W sekcji nie ma widocznego tytułu. Należy utworzyć ukryty nagłówek dla crawlerów.
-Sekcja zawiera listę adresów przedstawicielstw firmy. Należy go zaimplementować jako siatkę elementów.
-Napisy “Cafe” i “Food Truck” nie są nagłówkami. Są to kategorie przedstawicielstw.
-Kontaktowe numery telefonów i e-mail są podane jako linki. Muszą być zrealizowane za pomocą protokołów łączności.
-Przycisk “Our Locations” powinien otwierać okno modalne z treściowym obrazem mapy i linkiem do mapy zewnętrznego zasobu.
-Przycisk “Franchise” powinien otwierać okno modalne z formularzem do wprowadzenia danych przez użytkownika
-zainteresowanego warunkami franczyzy, informacji kontaktowych w celu dalszej komunikacji, który zawiera wejścia (którym
-należy dodać minimalną walidację danych do wprowadzenia za pomocą atrybutu pattern) i przyciskiem Submit. -->
