@@ -92,7 +92,7 @@
   text-align: center;
   display: block;
   justify-content: center;
-  gap: 0;
+  gap: 10px;
   margin-bottom: 24px;
 }
 
@@ -105,7 +105,7 @@
   line-height: 152%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1999px) {
   .footer-title {
     width: 352px;
     margin-bottom: 0;
@@ -145,6 +145,7 @@
     margin-top: 12px;
     display: flex;
     justify-content: center;
+    gap: 5px;
   }
   .social-icon:hover,
   .social-icon:focus {
@@ -183,6 +184,9 @@
   }
   .footer-text {
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
   }
   .social-icon:hover,
   .social-icon:focus {
