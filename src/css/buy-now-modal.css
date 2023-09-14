@@ -57,15 +57,18 @@
   text-align: center;
   margin-top: 28px;
   font-family: Seymour One;
-  font-size: 2rem;
+  font-size: 16px;
+  line-height:1.5;
   color: var(--dark-font-color);
-  font-weight: bold;
+  font-weight: 400;
   padding-inline: 74px;
 }
 
 @media screen and (min-width: 768px) {
   .buy-now-modal_body h3 {
     margin-top: 32px;
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
 
