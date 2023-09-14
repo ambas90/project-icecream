@@ -50,13 +50,7 @@
     text-decoration: underline;
 }
 
-.franchise-numbers {
-    display: none;
-}
 
-.hero-text {
-    display: none;
-}
 
 .ice-cream-img-wrapper {
     width: 177px;
@@ -288,8 +282,13 @@ screen and (min-width:768px) and (min-resolution: 2dppx) {
     line-height: 1.4;
     width: 181px;
     color: white;
-    letter-spacing: 0.02em;
-    
+    letter-spacing: 0.02em;    
+}
+
+@media screen and (max-width: 767px) {
+    .hero-text {
+        display: none;
+    }    
 }
 
 .hero-arrow {
