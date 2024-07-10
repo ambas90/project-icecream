@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://W-ojciech.github.io/team3-project-icecream",
+  "homepage": "https://ambas90.github.io/project-icecream",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team3-project-icecream/"
+    "build": "parcel build src/*.html --public-url /project-icecream/"
   },
   "repository": {
     "type": "git",
