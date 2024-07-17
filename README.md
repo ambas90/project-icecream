@@ -1,3 +1,3 @@
-# team3-project-icecream
+Sample company website with a responsive layout.
 
-https://w-ojciech.github.io/team3-project-icecream/
+ambas90.github.io/project-icecream/
