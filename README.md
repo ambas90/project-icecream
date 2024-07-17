@@ -1,3 +1,3 @@
 Sample company website with a responsive layout.
 
-ambas90.github.io/project-icecream/
+https://ambas90.github.io/project-icecream/
